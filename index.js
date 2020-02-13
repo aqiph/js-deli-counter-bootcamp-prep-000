@@ -21,7 +21,7 @@ function currentLine(current){
     return 'The line is currently empty.'
   }
   let message = 'The line is currently:';
-  for (let i=0;i<current.length-1;i++){
+  for (let i=0;i<current.length-1;++i){
     message = message+` ${i+1}. ${current[i]},`
   }
   message = message+` ${current.length}. ${current[current.length-1]}`
